@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+  <head>
+       
+    <meta charset="UTF-8" />
+
+       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+       
+    <title>forms</title>
+  </head>
+
+  <body>
+    <form action="/submit" method="post">
+          <label for="firstName">vezeteknev:</label>
+
+          <input type="text" id="firstName" name="firstName" required />
+
+          <br />
+
+          <label for="lastName">Keresztnev:</label>
+
+          <input type="text" id="lastName" name="lastName" required />
+
+          <br /><br />
+
+          <label for="birthdate">születési dátum:</label>
+
+          <input type="date" id="birthdate" name="birthdate" required />
+
+          <br /><br />
+
+          <label for="newsletter">biszbasz:</label>
+
+          <input type="checkbox" id="newsletter" name="newsletter" />
+
+          <br /><br />
+
+          <label for="interests">lada:</label>
+
+          <br /><br />
+
+         
+      <input
+        type="checkbox"
+        id="interests1"
+        name="interests[]"
+        value="interest1"
+      />
+
+          <label for="interests1">lada1</label>
+
+          <br /><br />
+
+         
+      <input
+        type="checkbox"
+        id="interests2"
+        name="interests[]"
+        value="interest2"
+      />
+
+          <label for="interests2">lada 2</label>
+
+          <br />
+
+         
+      <input
+        type="checkbox"
+        id="interests3"
+        name="interests[]"
+        value="interest3"
+      />
+
+          <label for="interests3">lada 3</label>
+
+          <br />
+
+              <br />
+
+          <label for="dogName">kutya nev:</label>
+
+        <input type="text" id="dogName" name="dogName" required />
+
+        <br />
+
+        <label for="catName">kandur nev:</label>
+
+        <input type="text" id="catName" name="catName" required />
+
+        <br />
+
+        Színek   <br />
+
+        <label for="kek">Kék:</label>
+
+        <input type="checkbox" id="kek" name="colors[]" value="kek" />
+
+        <br />
+
+        <label for="zold">Zöld:</label>
+
+        <input type="checkbox" id="zold" name="colors[]" value="zold" />
+
+        <br />
+
+        <label for="piros">Piros:</label>
+
+        <input type="checkbox" id="piros" name="colors[]" value="piros" />
+
+        <br />
+
+        <label for="lila">Lila:</label>
+
+        <input type="checkbox" id="lila" name="colors[]" value="lila" />
+
+        <br />
+
+        <label for="sarga">Sárga:</label>
+
+        <input type="checkbox" id="sarga" name="colors[]" value="sarga" />
+
+        <br />
+
+        számok:   <br />
+
+        <label for="favNumber1">szám1:</label>
+
+       
+      <input
+        type="number"
+        id="favNumber1"
+        name="favNumber1"
+        min="1"
+        max="100"
+      />
+
+        <br />
+
+        <label for="favNumber2">szám2:</label>
+
+       
+      <input
+        type="number"
+        id="favNumber2"
+        name="favNumber2"
+        min="1"
+        max="100"
+      />
+
+        <br />
+
+        <label for="favNumber3">szám3:</label>
+
+       
+      <input
+        type="number"
+        id="favNumber3"
+        name="favNumber3"
+        min="1"
+        max="100"
+      />
+
+        <br />
+
+            <input type="submit" value="Submit" />
+
+      <label for="gender">Nem:</label>
+
+         
+      <select id="gender" name="gender" required>
+             
+        <option value="">válasz nemet</option>
+
+             
+        <option value="male">Férfi</option>
+
+             
+        <option value="female">nő</option>
+
+             
+        <option value="other">Az szar ügy</option>
+
+           
+      </select>
+
+       
+    </form>
+
+       
+  </body>
+</html>
